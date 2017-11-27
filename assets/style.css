@@ -1,0 +1,87 @@
+/*
+Resetear el navegador
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Breakpoints:
+320px - 375px;
+376px - 667px; ktten-large
+667px - 1024px; kitten-small
+1024px - 1600px; kitten-medium
+*/
+
+@media (min-width: 1px) and (max-width: 667px) {
+  body {
+    background-image: url(../images/dawn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .primerGatito img {
+    display: none;
+  }
+
+  .segundoGatito img {
+    display: none;
+  }
+
+  .tercerGatito img {
+    width: 60%;
+    margin-top: 65%;
+    margin-left: 20%;
+  }
+}
+
+@media (min-width: 667px) and (max-width: 1024px) {
+  body {
+    background-image: url(../images/night.jpg);
+    background-repeat: no-repeat;
+    /*background-size: 100%;*/
+    height: 100vh;
+  }
+  .primerGatito img {
+    display: none;
+  }
+
+  .segundoGatito img {
+    width: 40%;
+    margin-top: 25%;
+    margin-left: 25%;
+  }
+
+  .tercerGatito img {
+    display: none;
+}
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+	body {
+		background-image: url(../images/sunny-day.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+	}
+
+  .primerGatito img {
+    width: 40%;
+    margin-top: 23%;
+    margin-left: 30%;
+  }
+
+  .segundoGatito img {
+    display: none;
+  }
+
+  .tercerGatito img {
+    display: none;
+}
+
+
+
